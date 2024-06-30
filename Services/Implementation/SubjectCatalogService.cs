@@ -2,9 +2,9 @@
 using School_Subjects_Information_system.Repositories;
 using School_Subjects_Information_system.Services;
 
-namespace School_Subjects_Information_system.Controller
+namespace School_Subjects_Information_system.Services.Implementation
 {
-    public class SubjectCatalogService
+    public class SubjectCatalogService : ISubjectCatalogService
     {
         private readonly ISubjectRepository _subjectRepository;
 
@@ -24,12 +24,12 @@ namespace School_Subjects_Information_system.Controller
             var subjectsFromFile = _subjectRepository.GetAllSubjectsFromFile();
             var subjectsFromApi = new ExternalApiHandlerService().FetchSubjects().Result;
 
-            if(subjectsFromFile != null)
+            if (subjectsFromFile != null)
             {
                 subjects.AddRange(subjectsFromFile);
             }
-            
-            if(subjectsFromApi != null)
+
+            if (subjectsFromApi != null)
             {
                 subjects.AddRange(subjectsFromApi);
             }

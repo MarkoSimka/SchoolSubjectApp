@@ -39,3 +39,4 @@ C:\Users\MARKO\source\Repos\School Subjects Information system\bin\Debug\net8.0\
 C:\Users\MARKO\source\Repos\School Subjects Information system\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\MARKO\source\Repos\School Subjects Information system\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\MARKO\source\Repos\School Subjects Information system\bin\Debug\net8.0\System.Linq.Async.dll
+C:\Users\MARKO\source\Repos\School Subjects Information system\obj\Debug\net8.0\School Subjects Information system.sourcelink.json

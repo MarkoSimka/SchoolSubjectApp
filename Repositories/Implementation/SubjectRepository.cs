@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using School_Subjects_Information_system.Models;
 
-namespace School_Subjects_Information_system.Repositories
+namespace School_Subjects_Information_system.Repositories.Implementation
 {
     public class SubjectRepository : ISubjectRepository
     {

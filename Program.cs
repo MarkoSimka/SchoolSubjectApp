@@ -1,12 +1,14 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using School_Subjects_Information_system.Controller;
 using School_Subjects_Information_system.Repositories;
+using School_Subjects_Information_system.Repositories.Implementation;
+using School_Subjects_Information_system.Services;
+using School_Subjects_Information_system.Services.Implementation;
 
 public class SchoolSubjectsInformationSystemApp
 {
-    private readonly SubjectCatalogService subjectCatalog;
+    private readonly ISubjectCatalogService subjectCatalog;
 
-    public SchoolSubjectsInformationSystemApp(SubjectCatalogService subjectCatalog)
+    public SchoolSubjectsInformationSystemApp(ISubjectCatalogService subjectCatalog)
     {
         this.subjectCatalog = subjectCatalog;
     }
@@ -26,11 +28,12 @@ public class SchoolSubjectsInformationSystemApp
         public static async Task Main(string[] args)
         {
             var serviceProvider = new ServiceCollection()
-            .AddSingleton<SubjectCatalogService>()
+            .AddSingleton<ISubjectCatalogService, SubjectCatalogService>()
+            .AddSingleton<IExternalApiHandlerService, ExternalApiHandlerService>()
             .AddSingleton<ISubjectRepository, SubjectRepository>()
             .BuildServiceProvider();
 
-            var subjectCatalog = serviceProvider.GetService<SubjectCatalogService>();
+            var subjectCatalog = serviceProvider.GetService<ISubjectCatalogService>();
             var app = new SchoolSubjectsInformationSystemApp(subjectCatalog);
             await app.Run();
         }

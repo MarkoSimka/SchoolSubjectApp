@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using School_Subjects_Information_system.Models;
 
-namespace School_Subjects_Information_system.Services
+namespace School_Subjects_Information_system.Services.Implementation
 {
     /// <summary>
     /// Handles fetching subjects from an external API.
@@ -11,7 +11,7 @@ namespace School_Subjects_Information_system.Services
     /// This class encapsulates the logic for making HTTP requests to retrieve subject data.
     /// Error handling ensures robustness against network failures or unexpected API responses.
     /// </remarks>
-    internal class ExternalApiHandlerService
+    internal class ExternalApiHandlerService : IExternalApiHandlerService
     {
         private readonly HttpClient client = new HttpClient();
 
@@ -36,13 +36,13 @@ namespace School_Subjects_Information_system.Services
             catch (HttpRequestException e)
             {
                 Console.WriteLine($"Request error: {e.Message}");
-                return new List<Subject>();
             }
             catch (Exception e)
             {
                 Console.WriteLine($"Unexpected error: {e.Message}");
-                return new List<Subject>();
             }
+
+            return new List<Subject>();
         }
     }
 }
