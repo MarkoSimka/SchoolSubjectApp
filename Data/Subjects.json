@@ -1,0 +1,47 @@
+﻿[
+  {
+    "Id": "a55b33b2-0f6f-4bfa-b728-6a3e7f9f1c6a",
+    "Name": "Mathematics",
+    "Description": "Study of numbers, quantity, structures, and change.",
+    "WeeklyClasses": 5,
+    "LiteratureUsed": [
+      "Math Textbook 1",
+      "Workbook for Exercises"
+    ],
+    "AdditionalProperties": {
+      "Teacher": "Mr. Smith",
+      "Room": "301",
+      "GradeLevel": "Grade 10"
+    }
+  },
+  {
+    "Id": "c9a7e855-5f7f-4f14-8c93-98aafcfa26a8",
+    "Name": "English Literature",
+    "Description": "Study of literature written in the English language.",
+    "WeeklyClasses": 4,
+    "LiteratureUsed": [
+      "Literature Anthology",
+      "Poetry Collection"
+    ],
+    "AdditionalProperties": {
+      "Teacher": "Ms. Johnson",
+      "Room": "202",
+      "GradeLevel": "Grade 11"
+    }
+  },
+  {
+    "Id": "e2f7e99f-9c5e-4526-8924-7d248be7c6a0",
+    "Name": "Art",
+    "Description": "Exploration of visual and conceptual creativity.",
+    "WeeklyClasses": 3,
+    "LiteratureUsed": [
+      "Art History Book",
+      "Modern Art Techniques Guide"
+    ],
+    "AdditionalProperties": {
+      "Teacher": "Mr. Davis",
+      "Room": "403",
+      "GradeLevel": "Grade 9"
+    }
+  }
+]
