@@ -13,3 +13,4 @@
 *.sln.docstates
 .vs/
 bin/
+obj/
