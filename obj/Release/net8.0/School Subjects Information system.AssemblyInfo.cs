@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("School Subjects Information system")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3215c61f972aaaa6d81bd33fa77fe4a86cd17fa2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2b8aee456a006a97f0e5a26e7ac8bb09ebbbc2c")]
 [assembly: System.Reflection.AssemblyProductAttribute("School Subjects Information system")]
 [assembly: System.Reflection.AssemblyTitleAttribute("School Subjects Information system")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
