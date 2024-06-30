@@ -12,3 +12,4 @@
 *.userosscache
 *.sln.docstates
 .vs/
+bin/
