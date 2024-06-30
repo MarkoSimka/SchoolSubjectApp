@@ -1,0 +1,14 @@
+# Ignore Visual Studio temporary files, build results, and
+# folder-based project configuration
+*.tmp
+*.temp
+*.obj
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
