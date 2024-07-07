@@ -46,10 +46,10 @@ namespace School_Subjects_Information_system.Services.Implementation
             Console.WriteLine("\nSelect a subject to view details:");
             if (subjects?.Count > 0)
             {
-                for (int i = 0; i < subjects.Count; i++)
-                {
-                    Console.WriteLine($"{i + 1} - {subjects[i].Name}");
-                }
+                subjects
+                    .Select((subject, index) => $"{index + 1}. {subject.Name}")
+                    .ToList()
+                    .ForEach(Console.WriteLine);
             }
             else
             {
@@ -119,10 +119,10 @@ namespace School_Subjects_Information_system.Services.Implementation
             Console.WriteLine("Literature used: ");
             if (subject.LiteratureUsed?.Count > 0)
             {
-                foreach (var literature in subject.LiteratureUsed)
-                {
-                    Console.WriteLine($" - {literature}");
-                }
+                subject.LiteratureUsed
+                    .Select((literature, index) => $"- {literature}")
+                    .ToList()
+                    .ForEach(Console.WriteLine);
             }
             else
             {
