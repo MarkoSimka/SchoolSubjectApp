@@ -1,5 +1,5 @@
 # School Subjects Information System
-This console application manages information about school subjects, allowing users to view details from a predefined list and fetch additional data from an external API.
+This console application manages informations about school subjects, allowing users to view details from a predefined list and fetch additional data from an external API.
 
 ##  Features
 *  Display a list of subjects with basic information.
