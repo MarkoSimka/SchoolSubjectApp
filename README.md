@@ -92,7 +92,4 @@ The subjects.json file should adhere to the following structure for each subject
 ##  Contributing
 Contributions are welcome! If you have any ideas, enhancements, or bug fixes, feel free to open an issue or submit a pull request.
 
-##  License
-This project is licensed under the [MIT License](https://opensource.org/license/mit).
-
 Happy coding!
